@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.without-ring:focus:not(:focus-visible) {
+  @apply focus:ring-0 focus:ring-offset-0;
+}
+
+.without-ring:focus-visible {
+  @apply ring-2 ring-offset-2;
+}
+
+.keyboard-only:focus:not(:focus-visible) {
+  @apply outline-none;
+}
+
+/* .keyboard-only:focus {
+  @apply bg-gray-2;
+} */
+
+.keyboard-only:focus-visible {
+  @apply outline-1 outline-blue-500;
+}
